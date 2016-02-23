@@ -6,7 +6,7 @@
 
 Name:           %{?scl_prefix}nodejs-async
 Version:        0.2.9
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Higher-order functions and common patterns for asynchronous code
 BuildArch:      noarch
 ExclusiveArch: %{nodejs_arches} noarch
@@ -64,6 +64,9 @@ rm -rf %buildroot
 %doc README.md LICENSE
 
 %changelog
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.2.9-4
+- rebuilt
+
 * Thu Oct 17 2013 Tomas Hrcka <thrcka@redhat.com> - 0.2.9-3
 - replace provides and requires with macro
 
